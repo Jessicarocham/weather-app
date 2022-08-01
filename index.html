@@ -16,65 +16,71 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form class="search-form" id="search-form">
-          <div class="row">
-            <div class="col-6">
-              <input
-                type="search"
-                placeholder="Type a city.."
-                autofocus="on"
-                autocomplete="off"
-                id="city-input"
-                class="form-control shadow-sm"
-              />
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form class="mb-3" id="search-form">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  autofocus="on"
+                  autocomplete="off"
+                  id="city-input"
+                  class="form-control shadow-sm"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+
+              <div class="col-3">
+                <button class="btn btn-primary w-100m" id="currentButton">
+                  📍Current
+                </button>
+              </div>
             </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="Search"
-                class="form-control btn btn-primary shadow-sm"
-              />
-            </div>
-            <div class="col-3">
-              <button
-                class="form-control btn btn-primary shadow-sm"
-                id="currentButton"
-              >
-                📍Current
-              </button>
-            </div>
-          </div>
-        </form>
-        <h1 id="city"></h1>
-        <ul>
-          <li id="date"></li>
-          <li id="temperature-description"></li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <div class="clearfix">
-              <div class="float-left">
-                <span class="temperature" id="temperature"></span>
-                <spam class="units">°C</spam>
+          </form>
+
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li id="date"></li>
+              <li id="description"></li>
+            </ul>
+            <div class="row">
+              <div class="col-6">
+                <div class="clearfix weather-temperature">
+                  <img src="" alt="Clear" id="icon" class="float-left" />
+                  <div class="float-left"></div>
+
+                  <strong id="temperature"></strong>
+                  <spam class="units">°C|<a href=""></a>°F</a></spam>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <ul>
+                  <li>Humidity: <span id="humidity"> </span>%</li>
+                  <li>Wind: <span id="wind"> </span>km/h</li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-6">
-            <ul>
-              <li>Humidity: <span id="humidity"> </span>%</li>
-              <li>Wind: <span id="wind"> </span>km/h</li>
-            </ul>
-          </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
+        <small>
+          <a href="https://github.com/Jessicarocham/weather-app"
+            >Open source code</a
+          >
+          by Jessica Moreira.
+        </small>
       </div>
     </div>
-    <footer>
-      <a href="https://github.com/Jessicarocham/weather-app" id="byMe"
-        >Open source code</a
-      >
-      , by Jessica Moreira.
-    </footer>
 
     <script src="script.js"></script>
   </body>
