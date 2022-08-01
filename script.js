@@ -1,4 +1,5 @@
-function formatDate(date) {
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -19,9 +20,16 @@ function formatDate(date) {
     "Saturday",
   ];
   let day = days[dayIndex];
-
-  return `${day} ${hours} ${minutes}`;
+  return `${day} ${hours}:${minutes}`;
 }
+
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[day];
+}
+
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
