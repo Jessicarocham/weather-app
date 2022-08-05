@@ -1,6 +1,6 @@
 :root {
   --primary-color: #3ca9d7;
-  --secondy-color: #4181e9;
+  --second-color: #4181e9;
   --gradient: linear-gradient(
     108.1deg,
     rgb(167, 220, 225) 11.2%,
@@ -36,14 +36,13 @@ small {
   text-align: center;
 }
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 800px;
   margin: 30px auto;
 }
 .weather-app {
-  border: var(--secondy-color);
+  border: var(--second-color);
   padding: 20px;
   border-radius: 10px;
-  background-color: var(--gradient);
 }
 .overview {
   margin-bottom: 20px;
