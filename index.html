@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css" />
 
     <link
@@ -13,6 +12,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather app</title>
   </head>
   <body>
@@ -40,15 +40,18 @@
               </div>
 
               <div class="col-3">
-                <button class="btn btn-primary w-100m" id="currentButton">
-                  📍Current
-                </button>
+                <input
+                  type="submit"
+                  value="📍Current"
+                  class="btn btn-primary w-100"
+                  id="currentButton"
+                />
               </div>
             </div>
           </form>
 
           <div class="overview">
-            <h1 id="city"></h1>
+            <h1 id="city" class="cityName"></h1>
             <ul>
               <li id="date"></li>
               <li id="description"></li>
