@@ -7,16 +7,13 @@
     rgb(217, 239, 242) 88.9%
   );
 }
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 h1 {
+  color: var(--secondy-color);
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
-  color: var(--secondy-color);
 }
 
 ul {
@@ -35,12 +32,19 @@ li {
 small {
   text-align: center;
 }
+.cityName {
+  color: var(--second-color);
+}
 .weather-app-wrapper {
   max-width: 800px;
   margin: 30px auto;
 }
 .weather-app {
-  border: var(--second-color);
+  background: linear-gradient(
+    108.1deg,
+    rgb(167, 220, 225) 11.2%,
+    rgb(217, 239, 242) 88.9%
+  );
   padding: 20px;
   border-radius: 10px;
 }
@@ -61,4 +65,7 @@ small {
   position: relative;
   font-size: 16px;
   top: -34px;
+}
+.btn-btn-primary-w-100 {
+  background: #3ca9d7;
 }
