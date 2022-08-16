@@ -40,7 +40,13 @@ small {
   margin: 30px auto;
 }
 .weather-app {
-  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background: linear-gradient(
+    90.7deg,
+    rgb(255, 253, 218) 1.9%,
+    rgb(246, 210, 255) 39.3%,
+    rgb(152, 222, 254) 64.7%,
+    rgb(251, 255, 210) 100.8%
+  );
   padding: 20px;
   border-radius: 10px;
 }
