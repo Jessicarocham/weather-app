@@ -22,9 +22,6 @@ li {
   list-style: none;
 }
 
-.cityName {
-  color: var(--second-color);
-}
 .weather-app-wrapper {
   max-width: 800px;
   margin: 40px auto;
@@ -39,7 +36,6 @@ li {
   margin-bottom: 20px;
 }
 .weather-temperature img {
-  margin-right: 5px;
   height: 64px;
   width: 64px;
 }
@@ -51,7 +47,7 @@ li {
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
-  top: -34px;
+  top: -20px;
 }
 #currentButton {
   background-color: var(--primary-color);
@@ -64,4 +60,7 @@ li {
 }
 #city-input {
   margin: 5px 5px;
+}
+.cityName {
+  color: var(--second-color);
 }
