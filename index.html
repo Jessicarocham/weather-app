@@ -35,7 +35,8 @@
                 <input
                   type="submit"
                   value="Search"
-                  class="btn btn-primary w-100"
+                  class="btn w-100"
+                  id="search-button"
                 />
               </div>
 
@@ -43,7 +44,7 @@
                 <input
                   type="submit"
                   value="📍Current"
-                  class="btn btn-primary w-100"
+                  class="btn w-100"
                   id="currentButton"
                 />
               </div>
@@ -52,25 +53,27 @@
 
           <div class="overview">
             <h1 id="city" class="cityName"></h1>
-            <ul>
-              <li id="date"></li>
-              <li id="description"></li>
-            </ul>
+
             <div class="row">
-              <div class="col-6">
+              <div class="col-md-5">
                 <div class="clearfix weather-temperature">
                   <img src="" alt="" id="icon" class="float-left" />
                   <div class="float-left"></div>
 
                   <strong id="temperature"></strong>
                   <spam class="units">
-                    <a href="#" id="celcius-link">°C</a>|
-                    <a href="#" id="fahrenheit-link">°F</a></spam
+                    <a href="#" id="celcius-link">°C </a>|
+                    <a href="#" id="fahrenheit-link"> °F</a></spam
                   >
                 </div>
               </div>
-
-              <div class="col-6">
+              <div class="col-md-3">
+                <ul>
+                  <li id="date"></li>
+                  <li id="description"></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
                 <ul>
                   <li>Humidity: <span id="humidity"> </span>%</li>
                   <li>Wind: <span id="wind"> </span>km/h</li>
@@ -78,8 +81,10 @@
               </div>
             </div>
           </div>
+
           <div class="weather-forecast" id="forecast"></div>
         </div>
+
         <small>
           <a href="https://github.com/Jessicarocham/weather-app"
             >Open source code</a
@@ -88,7 +93,6 @@
         </small>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

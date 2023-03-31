@@ -1,53 +1,38 @@
 :root {
-  --primary-color: #3ca9d7;
-  --second-color: #4181e9;
-  --gradient: linear-gradient(
-    108.1deg,
-    rgb(167, 220, 225) 11.2%,
-    rgb(217, 239, 242) 88.9%
-  );
+  --primary-color: #e8bd94;
+  --second-color: #eb643b;
+  --third-color: #b8e9ff;
 }
 
 h1 {
   color: var(--secondy-color);
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 100;
-  line-height: 28px;
-  margin-bottom: 0;
+  line-height: 32px;
+  margin-bottom: 10px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
 li {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   font-size: 16px;
   font-weight: 100;
   height: 19px;
   line-height: 1;
   list-style: none;
 }
-small {
-  text-align: center;
-}
+
 .cityName {
   color: var(--second-color);
 }
 .weather-app-wrapper {
   max-width: 800px;
-  margin: 30px auto;
+  margin: 40px auto;
 }
+
 .weather-app {
-  background: linear-gradient(
-    90.7deg,
-    rgb(255, 253, 218) 1.9%,
-    rgb(246, 210, 255) 39.3%,
-    rgb(152, 222, 254) 64.7%,
-    rgb(251, 255, 210) 100.8%
-  );
-  padding: 20px;
+  background-color: var(--third-color);
+  padding: 30px;
   border-radius: 10px;
 }
 .overview {
@@ -67,4 +52,16 @@ small {
   position: relative;
   font-size: 16px;
   top: -34px;
+}
+#currentButton {
+  background-color: var(--primary-color);
+  margin: 5px 5px;
+}
+
+#search-button {
+  background-color: var(--primary-color);
+  margin: 5px 5px;
+}
+#city-input {
+  margin: 5px 5px;
 }
