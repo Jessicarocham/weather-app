@@ -13,7 +13,7 @@ h1 {
 }
 
 li {
-  margin: 0;
+  margin-left: -5px;
   padding: 10px;
   font-size: 16px;
   font-weight: 100;
@@ -48,6 +48,7 @@ li {
   position: relative;
   font-size: 16px;
   top: -20px;
+  margin-left: 5px;
 }
 #currentButton {
   background-color: var(--primary-color);
